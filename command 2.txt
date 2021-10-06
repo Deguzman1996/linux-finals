@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Installing HTTPD"
+yum install -y httpd
+echo "Starting HTTPD"
+systemctl start httpd.service
+
+echo "Adding Firewall Rules"
+firewall-cmd --add-port 80/tcp --permanent
+firewall-cmd --reload
