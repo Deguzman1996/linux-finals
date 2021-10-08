@@ -1,4 +1,4 @@
-router 1
+#router 1
 
 vi lamp.sh
 
